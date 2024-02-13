@@ -10,6 +10,10 @@ def home():
         return redirect(url_for("results"))
     else:
         return render_template("home.html")
+#Ideas page
+@app.route("/ideas/")
+def ideas():
+    return(render_template("ideas.html"))
 
 #Login page
 @app.route("/login/", methods=["GET", "POST"])
